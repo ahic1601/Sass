@@ -51,6 +51,15 @@ main img {
   border-radius: 5px;
 }
 
+/* DISCOGRAFIA */
+col {
+  border: #5C5D5E solid 3px;
+}
+col:hover {
+  transition: all 0, 3s;
+  border: 3px solid;
+}
+
 /* GALERIA */
 .carousel {
   border: #98C3E3 solid 5px;

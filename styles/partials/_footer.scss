@@ -4,25 +4,25 @@
 
     img {
         width: 30px;
-        border: #98C3E3 solid 3px;
+        border: $no_anima_bordercolor solid 3px;
         border-radius: 50%;
     }
 
     a {
         text-decoration: none;
-        color: black;
+        color: $footer_textcolor;
         &:hover {
             transition: all 0.3s;
             transform: scale(1.1);
-            color: #63C1FF;
+            color: $animated_textcolor;
             img {
                 &:hover {
                     transition: all 0.3s;
                     transform: scale(1.1);
-                    border: #63C1FF solid 3px;
+                    border: $animated_bordercolor solid 3px;
                     border-radius: 50%;
-                    background-color: #274B63;
-                    color: #63C1FF;
+                    background-color: $animated_backgroundcolor;
+                    color: $animated_textcolor;
                 }
             }
         }
@@ -36,13 +36,13 @@
 
         img {
             width: 20px;
-            border: #98C3E3 solid 1px;
+            border: $no_animated_bordercolor solid 1px;
             border-radius: 50%;
         }
 
         a {
             text-decoration: none;
-            color: black;
+            color: $footer_textcolor;
         }
     }
 }

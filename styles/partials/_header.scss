@@ -3,7 +3,7 @@ header {
     img {
         width: 140px;
         border-radius: 50%;
-        border: #63C1FF solid 5px;
+        border: $animated_bordercolor solid 5px;
 
         &:hover {
             transition: all 0.5s;
@@ -23,10 +23,10 @@ header {
                 &:hover {
                     transition: all 0.3s;
                     transform: scale(1.1);
-                    border: #63C1FF solid 3px;
+                    border: $animated_bordercolor solid 3px;
                     border-radius: 5px;
-                    background-color: #274B63;
-                    color: #63C1FF;
+                    background-color: $animated_backgroundcolor;
+                    color: $animated_textcolor;
                 }
             }
         }
@@ -41,7 +41,7 @@ header {
             img {
                 width: 120px;
                 border-radius: 50%;
-                border: #63C1FF solid 3px;
+                border: $animated_bordercolor solid 3px;
             }
         }
     }
@@ -51,7 +51,7 @@ header {
             img {
                 width: 100px;
                 border-radius: 50%;
-                border: #63C1FF solid 3px;
+                border: $animated_bordercolor solid 3px;
             }
         }
     }

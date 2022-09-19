@@ -7,7 +7,7 @@ main {
 
 /* GALERIA */
 .carousel {
-    border: #98C3E3 solid 5px;
+    border: $no_animated_bordercolor solid 5px;
     border-radius: 5px;
     img {
         width: 100%;
@@ -17,8 +17,9 @@ main {
 /* CONTACTO */
 .form {
     width: 80%;
-    border: #5C5D5E solid 3px;
+    border: $form_bordercolor solid 3px;
     border-radius: 5px;
+
     .mb-3 {
         margin: 10px;
     }
