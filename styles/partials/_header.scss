@@ -1,28 +1,40 @@
 header {
+
     img {
-        width: 100px;
+        width: 140px;
         border-radius: 50%;
         border: #63C1FF solid 5px;
 
         &:hover {
-            transition: all 0.3s;
+            transition: all 0.5s;
             transform: scale(1.1)
         }
     }
 
-    .navbar-nav {
-        a {
-            &:hover {
-                transition: all 0.3s;
-                transform: scale(1.1);
-                border: #63C1FF solid 3px;
-                border-radius: 3px;
-                background-color: #8DB3CC;
-                color: #386C8F;
+    .collapse {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        .navbar-nav {
+            a {
+                margin: 10px;
+                font-size: 150%;
+                font-weight:bolder;
+                &:hover {
+                    transition: all 0.3s;
+                    transform: scale(1.1);
+                    border: #63C1FF solid 3px;
+                    border-radius: 5px;
+                    background-color: #274B63;
+                    color: #63C1FF;
+                }
             }
         }
-
     }
+
+
+
+
 
     @media screen and (max-width: 990px) {
         header {

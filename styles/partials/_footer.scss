@@ -1,26 +1,46 @@
 /* FOOTER */
 .footer {
     height: 100px;
+
     img {
         width: 30px;
         border: #98C3E3 solid 3px;
         border-radius: 50%;
     }
+
     a {
         text-decoration: none;
-        color: black;}
+        color: black;
+        &:hover {
+            transition: all 0.3s;
+            transform: scale(1.1);
+            color: #63C1FF;
+            img {
+                &:hover {
+                    transition: all 0.3s;
+                    transform: scale(1.1);
+                    border: #63C1FF solid 3px;
+                    border-radius: 50%;
+                    background-color: #274B63;
+                    color: #63C1FF;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 400px) {
     .footer {
         height: 200px;
         width: fit-content;
+
         img {
             width: 20px;
             border: #98C3E3 solid 1px;
             border-radius: 50%;
         }
-        a {        
+
+        a {
             text-decoration: none;
             color: black;
         }
