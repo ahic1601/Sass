@@ -1,0 +1,36 @@
+/* FOOTER */
+.footer {
+    grid-area: piedepagina;
+    height: 100px;
+}
+
+.footer div img {
+    width: 30px;
+    border: #98C3E3 solid 3px;
+    border-radius: 50%;
+}
+
+.footer div a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 400px) {
+    .footer div img {
+        width: 20px;
+        border: #98C3E3 solid 1px;
+        border-radius: 50%;
+    }
+    
+    .footer div a {
+        
+        text-decoration: none;
+        color: black;
+        
+    }
+
+    .footer {
+        height: 200px;
+        width: fit-content;
+    }
+}

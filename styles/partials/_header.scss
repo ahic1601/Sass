@@ -1,0 +1,27 @@
+.cabecera {
+    grid-area: cabecera;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .cabecera__logo {
+        img {
+            width: 150px;
+            border-radius: 50%;
+            border: #63C1FF solid 5px;
+        }
+    }
+
+    .cabecera__navbar {
+        justify-content: space-between;
+
+        .cabecera__navbar--navlink {
+            text-decoration: none;
+            font-size: 150%;
+            color: #386C8F;
+        }
+    }
+}
