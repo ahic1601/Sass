@@ -12,12 +12,12 @@
         text-decoration: none;
         color: $footer_textcolor;
         &:hover {
-            transition: all 0.3s;
+            transition: all 0.3s ease;
             transform: scale(1.1);
             color: $animated_textcolor;
             img {
                 &:hover {
-                    transition: all 0.3s;
+                    transition: all 0.3s ease;
                     transform: scale(1.1);
                     border: $animated_bordercolor solid 3px;
                     border-radius: 50%;
