@@ -1,4 +1,7 @@
 $container_backgroundcolor: #B0DFFF;
 $animated_bordercolor: #63C1FF;
 $animated_backgroundcolor:#274B63;
-$animated_textcolor:#63C1FF;
+$animated_textcolor:$animated_bordercolor;
+$no_animated_bordercolor:#98C3E3;
+$footer_textcolor:black;
+$form_bordercolor:#5C5D5E;
