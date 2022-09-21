@@ -31,10 +31,7 @@ header {
             }
         }
     }
-
-
-
-
+}
 
     @media screen and (max-width: 990px) {
         header {
@@ -43,8 +40,23 @@ header {
                 border-radius: 50%;
                 border: $animated_bordercolor solid 3px;
             }
+
+            .collapse {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .navbar-nav {
+                    a {
+                        margin: 0;
+                        font-size: 100%;
+                        font-weight:normal;
+                        }
+                    }
+                }
+            }
         }
-    }
+
 
     @media screen and (max-width: 768px) {
         header {
@@ -55,4 +67,3 @@ header {
             }
         }
     }
-}

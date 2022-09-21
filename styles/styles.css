@@ -5,7 +5,6 @@
 }
 
 body {
-  position: relative;
   min-height: 100vh;
 }
 
@@ -36,24 +35,35 @@ header .collapse .navbar-nav a:hover {
   background-color: #274B63;
   color: #63C1FF;
 }
+
 @media screen and (max-width: 990px) {
-  header header img {
+  header img {
     width: 120px;
     border-radius: 50%;
     border: #63C1FF solid 3px;
   }
+  header .collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  header .collapse .navbar-nav a {
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+  }
 }
 @media screen and (max-width: 768px) {
-  header header img {
+  header img {
     width: 100px;
     border-radius: 50%;
     border: #63C1FF solid 3px;
   }
 }
-
 /* INDEX */
 main {
-  height: 100vh;
+  height: 100%;
 }
 main img {
   border-radius: 5px;
@@ -88,8 +98,7 @@ main img {
 
 /* FOOTER */
 .pieDepagina {
-  width: 100vh;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 .pieDepagina .pieDepagina__links {
