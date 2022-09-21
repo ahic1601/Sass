@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
 header img {
   width: 140px;
   border-radius: 50%;
@@ -24,7 +29,7 @@ header .collapse .navbar-nav a {
   font-weight: bolder;
 }
 header .collapse .navbar-nav a:hover {
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   transform: scale(1.1);
   border: #63C1FF solid 3px;
   border-radius: 5px;
@@ -47,17 +52,11 @@ header .collapse .navbar-nav a:hover {
 }
 
 /* INDEX */
+main {
+  height: 100vh;
+}
 main img {
   border-radius: 5px;
-}
-
-/* DISCOGRAFIA */
-col {
-  border: #5C5D5E solid 3px;
-}
-col:hover {
-  transition: all 0, 3s;
-  border: 3px solid;
 }
 
 /* GALERIA */
@@ -88,29 +87,36 @@ col:hover {
 }
 
 /* FOOTER */
-.footer {
-  height: 100px;
+.pieDepagina {
+  width: 100vh;
+  position: absolute;
+  bottom: 0;
 }
-.footer img {
+.pieDepagina .pieDepagina__links {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+.pieDepagina .pieDepagina__links img {
   width: 30px;
   border: #98C3E3 solid 3px;
   border-radius: 50%;
 }
-.footer a {
-  text-decoration: none;
-  color: black;
-}
-.footer a:hover {
-  transition: all 0.3s;
-  transform: scale(1.1);
-  color: #63C1FF;
-}
-.footer a:hover img:hover {
-  transition: all 0.3s;
+.pieDepagina .pieDepagina__links img:hover {
+  transition: all 0.3s ease;
   transform: scale(1.1);
   border: #63C1FF solid 3px;
   border-radius: 50%;
   background-color: #274B63;
+  color: #63C1FF;
+}
+.pieDepagina .pieDepagina__links a {
+  text-decoration: none;
+  color: black;
+}
+.pieDepagina .pieDepagina__links a:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
   color: #63C1FF;
 }
 
