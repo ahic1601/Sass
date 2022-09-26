@@ -4,6 +4,11 @@ main {
     img {
         border-radius: 5px;
     }
+    .card {
+        @include cardNmtd ($no_animated_bordercolor:rgb(44, 121, 121),$animated_bordercolor:rgb(66, 226, 191))
+
+        
+    }
 }
 
 /* GALERIA */
@@ -12,15 +17,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
     width: auto;
 
     img {
-        border: $no_animated_bordercolor solid 5px;
+        @include cardNmtd ($no_animated_bordercolor:rgb(44, 121, 121),$animated_bordercolor:rgb(66, 226, 191));
         width: 100%;
     }
     iframe {
-        border: $no_animated_bordercolor solid 5px;
+        @include cardNmtd ($no_animated_bordercolor:rgb(44, 121, 121),$animated_bordercolor:rgb(66, 226, 191));
 
     }
 }

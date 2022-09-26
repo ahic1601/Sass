@@ -1,12 +1,12 @@
 %logoImg {
     width: 140px;
     border-radius: 50%;
-    border: $animated_bordercolor solid 5px;
+    border: map-get($colores, no_animated_bordercolor) solid 5px;
 
     &:hover {
         transition: all 0.5s ease;
         transform: scale(1.1);
-        border: rgb(184, 56, 243) solid 7px;
+        border: map-get($colores, animated_bordercolor) solid 7px;
     }
 }
 
@@ -24,11 +24,13 @@
             &:hover {
                 transition: all 0.3s ease;
                 transform: scale(1.1);
-                border: $animated_bordercolor solid 3px;
+                border: map-get($colores, animated_bordercolor) solid 3px;
                 border-radius: 5px;
-                background-color: $animated_backgroundcolor;
-                color: $animated_textcolor;
+                background-color: map-get($colores, animated_backgroundcolor);
+                color: map-get($colores, animated_textcolor);
             }
         }
+
     }
+
 }

@@ -13,11 +13,11 @@
     
     
         img {
-            @include footerBtn ($animated_bordercolor: rgb(181, 66, 226))
+            @include footerBtn ($animated_bordercolor: rgb(66, 226, 151))
         }
     
         a {
-            @include footerTxt ($animated_textcolor:rgb(96, 8, 131))
+            @include footerTxt ($animated_textcolor:rgb(8, 131, 84))
         }
     }
 }

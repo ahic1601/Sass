@@ -1,12 +1,12 @@
 header img {
   width: 140px;
   border-radius: 50%;
-  border: #63C1FF solid 5px;
+  border: #659e83 solid 5px;
 }
 header img:hover {
   transition: all 0.5s ease;
   transform: scale(1.1);
-  border: rgb(184, 56, 243) solid 7px;
+  border: #63ffb1 solid 7px;
 }
 
 header .collapse {
@@ -22,14 +22,14 @@ header .collapse .navbar-nav a {
 header .collapse .navbar-nav a:hover {
   transition: all 0.3s ease;
   transform: scale(1.1);
-  border: #63C1FF solid 3px;
+  border: #63ffb1 solid 3px;
   border-radius: 5px;
-  background-color: #274B63;
-  color: #63C1FF;
+  background-color: #1b5e4a;
+  color: #63ffd0;
 }
 
 * {
-  background-color: #e1befd;
+  background-color: #c0eed4;
   padding: 0;
   margin: 0;
 }
@@ -70,6 +70,14 @@ main {
 main img {
   border-radius: 5px;
 }
+main .card {
+  border: rgb(44, 121, 121) solid 3px;
+  border-radius: 3px;
+}
+main .card:hover {
+  transition: all 0.3s ease;
+  border: rgb(66, 226, 191) solid 3px;
+}
 
 /* GALERIA */
 .carousel {
@@ -77,15 +85,24 @@ main img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
   width: auto;
 }
 .carousel img {
-  border: #98C3E3 solid 5px;
+  border: rgb(44, 121, 121) solid 3px;
+  border-radius: 3px;
   width: 100%;
 }
+.carousel img:hover {
+  transition: all 0.3s ease;
+  border: rgb(66, 226, 191) solid 3px;
+}
 .carousel iframe {
-  border: #98C3E3 solid 5px;
+  border: rgb(44, 121, 121) solid 3px;
+  border-radius: 3px;
+}
+.carousel iframe:hover {
+  transition: all 0.3s ease;
+  border: rgb(66, 226, 191) solid 3px;
 }
 
 /* CONTACTO */
@@ -118,13 +135,13 @@ main img {
 }
 .pieDepagina .pieDepagina__links img {
   width: 30px;
-  border: #98C3E3 solid 3px;
+  border: #98e3b7 solid 3px;
   border-radius: 50%;
 }
 .pieDepagina .pieDepagina__links img:hover {
   transition: all 0.3s ease;
   transform: scale(1.1);
-  border: rgb(181, 66, 226) solid 3px;
+  border: rgb(66, 226, 151) solid 3px;
   border-radius: 50%;
 }
 .pieDepagina .pieDepagina__links a {
@@ -134,7 +151,7 @@ main img {
 .pieDepagina .pieDepagina__links a:hover {
   transition: all 0.3s ease;
   transform: scale(1.2);
-  color: rgb(96, 8, 131);
+  color: rgb(8, 131, 84);
 }
 
 @media screen and (max-width: 400px) {
@@ -146,7 +163,7 @@ main img {
   }
   .footer img {
     width: 20px;
-    border: #98C3E3 solid 1px;
+    border: #98e3b7 solid 1px;
     border-radius: 50%;
   }
   .footer a {
