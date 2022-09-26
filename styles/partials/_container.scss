@@ -1,5 +1,5 @@
 *{
-    background-color: $container_backgroundcolor;
+    background-color: map-get($colores, container_backgroundcolor);
     padding: 0;
     margin: 0;
   }  

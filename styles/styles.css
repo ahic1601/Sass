@@ -1,22 +1,14 @@
-* {
-  background-color: #B0DFFF;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  min-height: 100vh;
-}
-
 header img {
   width: 140px;
   border-radius: 50%;
   border: #63C1FF solid 5px;
 }
 header img:hover {
-  transition: all 0.5s;
+  transition: all 0.5s ease;
   transform: scale(1.1);
+  border: rgb(184, 56, 243) solid 7px;
 }
+
 header .collapse {
   display: flex;
   flex-direction: row;
@@ -34,6 +26,16 @@ header .collapse .navbar-nav a:hover {
   border-radius: 5px;
   background-color: #274B63;
   color: #63C1FF;
+}
+
+* {
+  background-color: #B0DFFF;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 990px) {
@@ -114,10 +116,8 @@ main img {
 .pieDepagina .pieDepagina__links img:hover {
   transition: all 0.3s ease;
   transform: scale(1.1);
-  border: #63C1FF solid 3px;
+  border: rgb(181, 66, 226) solid 3px;
   border-radius: 50%;
-  background-color: #274B63;
-  color: #63C1FF;
 }
 .pieDepagina .pieDepagina__links a {
   text-decoration: none;
@@ -125,8 +125,8 @@ main img {
 }
 .pieDepagina .pieDepagina__links a:hover {
   transition: all 0.3s ease;
-  transform: scale(1.1);
-  color: #63C1FF;
+  transform: scale(1.2);
+  color: rgb(96, 8, 131);
 }
 
 @media screen and (max-width: 400px) {

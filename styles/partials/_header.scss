@@ -1,35 +1,11 @@
 header {
 
     img {
-        width: 140px;
-        border-radius: 50%;
-        border: $animated_bordercolor solid 5px;
-
-        &:hover {
-            transition: all 0.5s;
-            transform: scale(1.1)
-        }
+        @extend %logoImg;
     }
 
     .collapse {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        .navbar-nav {
-            a {
-                margin: 10px;
-                font-size: 150%;
-                font-weight:bolder;
-                &:hover {
-                    transition: all 0.3s ease;
-                    transform: scale(1.1);
-                    border: $animated_bordercolor solid 3px;
-                    border-radius: 5px;
-                    background-color: $animated_backgroundcolor;
-                    color: $animated_textcolor;
-                }
-            }
-        }
+        @extend %headerNavbar;
     }
 }
 
