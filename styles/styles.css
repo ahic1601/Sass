@@ -73,11 +73,19 @@ main img {
 
 /* GALERIA */
 .carousel {
-  border: #98C3E3 solid 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
+  width: auto;
 }
 .carousel img {
+  border: #98C3E3 solid 5px;
   width: 100%;
+}
+.carousel iframe {
+  border: #98C3E3 solid 5px;
 }
 
 /* CONTACTO */

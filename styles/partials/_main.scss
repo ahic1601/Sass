@@ -8,10 +8,20 @@ main {
 
 /* GALERIA */
 .carousel {
-    border: $no_animated_bordercolor solid 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
+    width: auto;
+
     img {
+        border: $no_animated_bordercolor solid 5px;
         width: 100%;
+    }
+    iframe {
+        border: $no_animated_bordercolor solid 5px;
+
     }
 }
 
