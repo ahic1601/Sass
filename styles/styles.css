@@ -69,10 +69,12 @@ main {
 }
 main img {
   border-radius: 5px;
+  width: 100%;
 }
 main .card {
   border: rgb(44, 121, 121) solid 3px;
   border-radius: 3px;
+  background-color: #659e83;
 }
 main .card:hover {
   transition: all 0.3s ease;
@@ -90,6 +92,7 @@ main .card:hover {
 .carousel img {
   border: rgb(44, 121, 121) solid 3px;
   border-radius: 3px;
+  background-color: #659e83;
   width: 100%;
 }
 .carousel img:hover {
@@ -99,10 +102,16 @@ main .card:hover {
 .carousel iframe {
   border: rgb(44, 121, 121) solid 3px;
   border-radius: 3px;
+  background-color: #659e83;
 }
 .carousel iframe:hover {
   transition: all 0.3s ease;
   border: rgb(66, 226, 191) solid 3px;
+}
+
+.viDeo {
+  width: 640px;
+  height: 320px;
 }
 
 /* CONTACTO */
@@ -123,6 +132,12 @@ main .card:hover {
   height: fit-content;
 }
 
+@media screen and (max-width: 660px) {
+  .viDeo {
+    width: 100%;
+    height: auto;
+  }
+}
 /* FOOTER */
 .pieDepagina {
   position: relative;

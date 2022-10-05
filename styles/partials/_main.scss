@@ -3,6 +3,7 @@ main {
     height: 100%;
     img {
         border-radius: 5px;
+        width: 100%;
     }
     .card {
         @include cardNmtd ($no_animated_bordercolor:rgb(44, 121, 121),$animated_bordercolor:rgb(66, 226, 191))
@@ -23,10 +24,16 @@ main {
         @include cardNmtd ($no_animated_bordercolor:rgb(44, 121, 121),$animated_bordercolor:rgb(66, 226, 191));
         width: 100%;
     }
+
     iframe {
         @include cardNmtd ($no_animated_bordercolor:rgb(44, 121, 121),$animated_bordercolor:rgb(66, 226, 191));
 
     }
+}
+
+.viDeo {
+    width: 640px;
+    height: 320px;
 }
 
 /* CONTACTO */
@@ -44,4 +51,11 @@ main {
 .tour {
     width: 100%;
     height: fit-content;
+}
+
+@media screen and (max-width: 660px) {
+    .viDeo {
+        width: 100%;
+        height: auto;
+    }
 }

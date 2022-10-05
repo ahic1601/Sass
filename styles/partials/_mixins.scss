@@ -25,8 +25,15 @@
 @mixin cardNmtd ($no_animated_bordercolor,$animated_bordercolor) {
     border: $no_animated_bordercolor solid 3px;
     border-radius: 3px;
+    background-color: map-get($colores, no_animated_bordercolor);
+
     &:hover {
         transition: all 0.3s ease;
         border: $animated_bordercolor solid 3px;
     }
+}
+
+@mixin viDeo {
+    width: 500px;
+    height: 300px;
 }
