@@ -37,3 +37,11 @@
     width: 500px;
     height: 300px;
 }
+
+@mixin Flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

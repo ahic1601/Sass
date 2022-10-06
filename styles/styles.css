@@ -63,8 +63,8 @@ body {
     border: #63C1FF solid 3px;
   }
 }
-/* INDEX */
 main {
+  width: 100%;
   height: 100%;
 }
 main img {
@@ -80,14 +80,21 @@ main .card:hover {
   transition: all 0.3s ease;
   border: rgb(66, 226, 191) solid 3px;
 }
+main .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
 
 /* GALERIA */
 .carousel {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
   align-items: center;
-  width: auto;
 }
 .carousel img {
   border: rgb(44, 121, 121) solid 3px;
